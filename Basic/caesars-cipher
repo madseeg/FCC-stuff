@@ -1,0 +1,20 @@
+function rot13(str) { // LBH QVQ VG!
+  var letters = [];
+  for (var i = 0; i < str.length; i++) {
+    var charCode = str.charCodeAt(i);
+    var whateverNum = 0;
+    if (charCode >= 65 && charCode <= 77) {
+      whateverNum = charCode + 13;
+    } else if (charCode >= 78 && charCode <= 90) {
+      whateverNum = charCode - 13;
+    } else {
+      whateverNum = charCode;
+    }
+    letters.push(String.fromCharCode(whateverNum));
+  }  
+  var decoded = letters.join('');
+  return decoded;
+}
+
+// Change the inputs below to test
+rot13("GUR DHVPX OEBJA QBT WHZCRQ BIRE GUR YNML SBK.");
