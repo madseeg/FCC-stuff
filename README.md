@@ -1,2 +1,2 @@
-# FCC-algorithms
-My solutions to the Algorithm challenges on Free Code Camp
+# FCC-stuff
+My solutions to the Algorithm challenges and practice project for Terraform Crash Course on Free Code Camp
